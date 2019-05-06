@@ -1,0 +1,36 @@
+.main{
+    padding: 65rpx;
+}
+h3{
+    font-size: 36rpx;
+    color:#222;
+}
+input{
+    width:622rpx;
+    height:108rpx;
+    font-size: 32rpx;
+    color: #222;
+    background:#F7F7FB;
+    border:1rpx solid rgba(241,240,245,1);
+    border-radius:8rpx 8rpx 8rpx 8rpx;
+    padding: 33rpx;
+    margin-top: 30rpx;
+    margin-bottom: 52rpx;
+    overflow: hidden;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #69707F;
+    font-size: 28rpx;
+}
+span{
+    display: inline-block;
+    display: flex;
+    margin-top: 52rpx;
+    font-size: 30rpx;
+    color: #222;
+}
+span .phone{
+    font-style: normal;
+    color: #5285F9;
+    text-decoration: underline;
+}

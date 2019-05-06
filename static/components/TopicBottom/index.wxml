@@ -1,0 +1,32 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="topic-bottom">
+    <view class="l">
+        <view class="icon" wx:if="{{ type == 'error' || type == 'topic' || type == 'course' }}" bindtap="clickCollect">
+            <image  class="collect-img"  src="{{collectState ? './img/collectTrue.png':'./img/collectFalse.png'}}"></image>
+            <text class="text {{ collectState?'active':'' }}">{{ collectState ? '已收藏':'收藏' }}</text>
+        </view>
+
+        <view class="icon" wx:if="{{ type == 'examResult' || type == 'error' || type == 'topic' }}" bindtap="clickAnswer">
+            <image  class="answer-img"  src="{{seeAnswerState ? './img/seeAnswerTrue.png':'./img/seeAnswerFalse.png'}}"></image>
+            <text class="text {{ seeAnswerState?'active':'' }}">查看答案</text>
+        </view>
+
+        <view class="icon" wx:if="{{ type == 'error' }}" bindtap="clickLearn">
+            <image  class="learn-img"  src="{{learnState ? './img/learnTrue.png':'./img/learnFalse.png'}}"></image>
+            <text class="text {{ learnState?'active':'' }}">{{ learnState ? '已学会' : '学会' }}</text>
+        </view>
+
+        <view class="icon" wx:if="{{ type != 'error' }}" bindtap="clickDirectory">
+            <image  class="directory-img"  src="{{directoryState ? './img/directoryTrue.png':'./img/directoryFalse.png'}}"></image>
+            <text class="text {{ directoryState?'active':'' }}">目录</text>
+        </view>
+    </view>
+    <view class="r">
+        <view wx:if="{{ type == 'exam' }}" class="topic-bottom-btn exam" bindtap="clickSubmitExam" hover-class="hover-opacity">
+            <image class="time-img" src="./img/time.png"></image>
+            <text class="time-text">{{ utils.formatExamTime(examTime) }}|交卷</text>
+        </view>
+        <view class="topic-bottom-btn previous" bindtap="clickPrevioust" hover-class="hover-opacity">上一{{ type != 'course' ? '题' : '节' }}</view>
+        <view class="topic-bottom-btn next" bindtap="clickNext" hover-class="hover-opacity">下一{{ type != 'course' ? '题' : '节' }}</view>
+    </view>
+</view>

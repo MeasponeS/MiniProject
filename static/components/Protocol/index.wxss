@@ -1,0 +1,39 @@
+.protocol-zj{
+    display: flex;
+    height: 40rpx;
+    line-height: 0;
+    align-items: center;
+}
+.protocol-zj .contentRadio{
+    width: 60rpx;
+    height: 60rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.protocol-zj .radio{
+    width:26rpx;
+    height:26rpx;
+    display: flex;
+    box-shadow: 0 0 20rpx rgba(43,96,255,.8);
+    margin-right: 20rpx;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    background:rgba(43,96,255,1);
+    border-radius:50%;
+}
+.protocol-zj .active{
+    width: 10rpx;
+    height: 10rpx;
+    border-radius: 50%;
+    background: #eee;
+}
+.agreement{
+    color:#969FA9;
+    font-size: 26rpx;
+}
+.protocol-zj .agreement-a{
+    display: inline-block;
+    color:rgba(43,96,255,1)
+}

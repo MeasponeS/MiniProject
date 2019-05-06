@@ -1,0 +1,14 @@
+<view style="{{'height:'+(height+top)+'px;'}}{{'background:'+bgColor}}">
+    <wxs src="../utils.wxs" module="utils" />
+    <view class="header">
+        <view class="nav-bar" style="{{'margin-top:'+top +'px;'}} {{'height:' + height + 'px'}}">
+            <view class="nav-left" wx:if="{{ hasReturn }}" bindtap="returnBtn" style="{{'color：' + textType}}">
+                <image class="back-icon" wx:if="{{ textType =='#fff' }}" src="./img/return-b.png"></image>
+                <image class="back-icon" wx:else src="./img/return-h.png" ></image>
+                返回
+            </view>
+            <view class="nav-center">{{ title }}</view>
+            <view class="nav-right" wx:if="{{ hasReturn }}"></view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,99 @@
+{
+    "pages": [
+        "pages/index/main",
+
+        "pages/study/index/main",
+        "pages/study/chapterA/main",
+        "pages/study/chapterB/main",
+        "pages/study/special/main",
+        "pages/study/studyDetails/main",
+
+        "pages/topic/index/main",
+        "pages/topic/topicLevel/main",
+        "pages/topic/topicDetails/main",
+        "pages/topic/topicResults/main",
+        "pages/topic/errorList/main",
+        "pages/topic/topicError/main",
+
+        "pages/exam/index/main",
+        "pages/exam/examDiscipline/main",
+        "pages/exam/examDetails/main",
+        "pages/exam/examResult/main",
+        "pages/exam/examHistory/main",
+
+        "pages/mine/index/main",
+        "pages/mine/info/main",
+        "pages/mine/collection/main",
+        "pages/mine/message/main",
+        "pages/mine/messageDetails/main",
+        "pages/mine/editPassword/main",
+
+        "pages/other/register/main",
+        "pages/other/login/main",
+        "pages/other/resetPassword/main",
+        "pages/other/agreement/main",
+        "pages/other/openLearningCard/main"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#000000",
+        "navigationBarTextStyle": "white",
+        "navigationStyle": "default"
+    },
+    "tabBar": {
+        "backgroundColor": "#fff",
+        "color": "#969FA9",
+        "selectedColor": "#4D86F8",
+        "list": [
+            {
+                "pagePath": "pages/index/main",
+                "text": "首页",
+                "iconPath": "/static/images/tabBar/index_default.png",
+                "selectedIconPath": "/static/images/tabBar/index_highlight.png"
+            },
+            {
+                "pagePath": "pages/study/index/main",
+                "text": "学习",
+                "iconPath": "/static/images/tabBar/study_default.png",
+                "selectedIconPath": "/static/images/tabBar/study_highlight.png"
+            },
+            {
+                "pagePath": "pages/topic/index/main",
+                "text": "习题",
+                "iconPath": "/static/images/tabBar/topic_default.png",
+                "selectedIconPath": "/static/images/tabBar/topic_highlight.png"
+            },
+            {
+                "pagePath": "pages/exam/index/main",
+                "text": "考试",
+                "iconPath": "/static/images/tabBar/exam_default.png",
+                "selectedIconPath": "/static/images/tabBar/exam_highlight.png"
+            },
+            {
+                "pagePath": "pages/mine/index/main",
+                "text": "我的",
+                "iconPath": "/static/images/tabBar/mine_default.png",
+                "selectedIconPath": "/static/images/tabBar/mine_highlight.png"
+            }
+        ]
+    },
+    "usingComponents": {
+        "van-popup": "/static/components/vant-weapp/popup/index",
+        "van-progress": "/static/components/vant-weapp/progress/index",
+        "van-button": "/static/components/vant-weapp/button/index",
+        "van-tag": "/static/components/vant-weapp/tag/index",
+        "van-picker": "/static/components/vant-weapp/picker/index",
+
+        "do-topic-options": "/static/components/DoTopicOptions/index",
+        "topic-card": "/static/components/TopicCard/index",
+        "nav-bar": "/static/components/NavBar/index",
+        "protocol": "/static/components/Protocol/index",
+        "empty-display": "/static/components/EmptyDisplay/index",
+        "topic-top": "/static/components/TopicTop/index",
+        "topic-bottom": "/static/components/TopicBottom/index",
+        "circle-progress": "static/components/CircleProgress/index",
+        "topic-directory": "/static/components/TopicDirectory/index",
+        "rect-progress": "/static/components/RectProgress/index",
+        "topic-answer": "/static/components/TopicAnswer/index"
+    }
+}

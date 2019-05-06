@@ -1,0 +1,104 @@
+.contentTop{
+    margin-top: 50rpx;
+    padding: 0 62rpx;
+    display: flex;
+    color:#FFF;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.contentTop .info,.contentTop .name{
+    width: 100%;
+    margin-bottom: 44rpx;
+}
+.contentTop .info .info-val{
+    flex: 1;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap
+}
+.contentTop div p{
+    display: inline-block;
+    font-size: 48rpx;
+}
+.contentTop div a{
+    display: inline-block;
+    margin-left: 74rpx;
+}
+.contentTop span{
+    font-size: 30rpx;
+}
+.contentTop .info{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.contentTop .select-sub{
+    padding: 4rpx 6rpx;
+    font-size: 24rpx;
+    border-radius: 5rpx;
+    text-align: center;
+    line-height: 30rpx;
+    background-color: #F8B64D;
+}
+.contentTop .line{
+    display: inline-block;
+    width: 2rpx;
+    height: 22rpx;
+    background: #FFF;
+    opacity: 0.5;
+    margin: 0 20rpx;
+}
+.chapter-a-list{
+    flex: 1;
+    overflow-y: auto;
+    width: 711rpx;
+    margin: 0 auto;
+    margin-top: 40rpx;
+    background-color:#F3F5F7;
+    padding-bottom: 40rpx;
+    border-radius: 5rpx;
+}
+.chapter-a-list li{
+    width: 100%;
+    height: 184rpx;
+    margin-bottom: 22rpx;
+    background: #FFF;
+    border-radius: 6rpx;
+    overflow: hidden;
+    padding: 48rpx 36rpx 30rpx 36rpx ;
+    position: relative;
+}
+.chapter-a-list li h3{
+    display: inline-block;
+    font-size: 32rpx;
+    color:#222;
+}
+.chapter-a-list li span{
+    font-size: 26rpx;
+    color:#969FA9;
+    position: absolute;
+    top: 58rpx;
+    right: 36rpx;
+}
+.chapter-a-list li .percentage{
+    display: block;
+    width: 52rpx;
+    height: 22rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 11rpx;
+    background:rgba(254,230,172,1);
+    border:1px solid rgba(228,158,68,1);
+    top: 144rpx;
+}
+.chapter-a-list li .vanPercentage{
+    margin-top: 63rpx;
+}
+.chapter-a-list li .percentage em{
+    font-style: normal;
+    font-size: 12rpx;
+    color:#E49E44;
+}
+

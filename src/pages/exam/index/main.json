@@ -1,0 +1,7 @@
+{
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#F3F5F7",
+    "backgroundTextStyle":"dark",
+    "navigationBarTitleText": "考试"
+
+}

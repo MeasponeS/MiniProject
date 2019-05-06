@@ -1,0 +1,17 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="correct-rate">
+    <view class="circle-wrap">
+        <view class="circle-left"></view>
+        <view class="circle-right" style="{{'transform:' + 'rotate('+progress*3.6 + 'deg)'}}"></view>
+        <view class="circle-content" wx:if="{{ type == 1 }}">
+            <text class="progress">{{progress}}%</text >
+            <text class="text">{{text}}</text >
+        </view>
+        <view class="circle-content" wx:if="{{ type == 2 }}">
+            <view class="progress">
+                <text style="display: inline-block;">{{progress}}</text>
+                <text style="font-size: 26rpx;display: inline-block;">{{text}}</text>
+            </view >
+        </view>
+    </view>
+</view>

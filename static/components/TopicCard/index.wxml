@@ -1,0 +1,9 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="topic-card">
+    <rich-text nodes="{{ title }}"></rich-text>
+    <view class="items-ul" wx:if="{{ options.length > 0 }}">
+        <view class="items-li" wx:for="{{ options }}" wx:key="{{ item.optionName }}">{{ utils.toLowerCase(item.optionName) }}.
+            <rich-text style="display: inline-block" nodes="{{ item.optionContent }}"></rich-text>
+        </view>
+    </view>
+</view>

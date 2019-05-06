@@ -1,0 +1,114 @@
+.nav-left{
+    color:#000
+}
+.main{
+    background-image:url(https://static.hulian120.com/learncenter/minipro/v201901/common/registerRightTop.png),url(https://static.hulian120.com/learncenter/minipro/v201901/common/registerLeftBottom.png) ;
+    background-size:354rpx 209rpx,294rpx 243rpx;
+    background-position: right top,left bottom;
+    background-repeat: no-repeat;
+    background-color: #FFF;
+}
+.content{
+    margin: 90rpx 67rpx 0 61rpx;
+    position: relative;
+}
+.content .tab{
+    display: flex;
+    font-size: 36rpx;
+    margin-bottom: 104rpx;
+}
+.content .tab li{
+    margin-right: 35rpx;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.tab .active{
+  font-weight:bold;
+}
+.tab .active::after{
+    content: '';
+    position: absolute;
+    bottom: -18rpx;
+    left: calc(50% - 25rpx);
+    width:50rpx;
+    height:6rpx;
+    background: #5285F9;
+    border-radius: 3rpx;
+}
+.content input{
+    width:622rpx;
+    height:108rpx;
+    font-size: 32rpx;
+    background:#F7F7FB;
+    border:1rpx solid rgba(241,240,245,1);
+    border-radius:8rpx 8rpx 8rpx 8rpx;
+    padding: 0 33rpx;
+    line-height: 108rpx;
+    margin-top: 48rpx;
+    overflow: hidden;
+}
+.content .msg{
+    width: 622rpx;
+    height: 108rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32rpx;
+    color:#69707F;
+    overflow: hidden;
+    background:rgba(247,247,251,1);
+    border:1px solid rgba(241,240,245,1);
+    border-radius:8rpx 8rpx 8rpx 8rpx;
+}
+.content .msgLogin{
+    margin-bottom: 50rpx;
+}
+.content .passwordLogin{
+    position: relative;
+    margin-bottom: 0;
+}
+.content .passwordLogin span{
+    display: block;
+    width: 100%;
+    text-align: right
+}
+.content .msgLogin a{
+    display: inline-block;
+    line-height:80rpx;
+    font-size: 26rpx;
+    color:rgba(150,159,169,1);
+}
+.content .msg .tel{
+    flex: 1;
+    border-left:none;
+    border-right:none;
+    margin-top: 0;
+}
+.content .line{
+    width:2rpx;
+    height:30rpx;
+    background:rgba(150,159,169,1);
+    margin-right: 28rpx;
+}
+.content .get-msg{
+    font-size:28rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32rpx;
+}
+.protocol{
+    margin-top: 59rpx;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.protocol .agreement{
+
+}
+.protocol  .goLogin{
+    color:#969FA9;
+    font-size: 26rpx;
+}
+

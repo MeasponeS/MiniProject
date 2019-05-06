@@ -1,0 +1,54 @@
+.circle-wrap {
+    width: 164rpx;
+    height: 164rpx;
+    border-radius: 50%;
+    background-color: #4D86F8;
+    border: 5px solid #f5f7f9;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.circle-right, .circle-left {
+    width: 164rpx;
+    height: 164rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #d1d7e4;
+    border-radius: 50%;
+}
+.circle-left {
+    clip: rect(0, 82rpx, auto, 0);
+}
+.circle-right {
+    clip: rect(0, auto, auto, 82rpx);
+}
+.circle-content {
+    width: 126rpx;
+    height: 126rpx;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.progress {
+    font-size: 19px;
+    color: #4D86F8;
+}
+.text {
+    color: #222;
+    font-size: 18rpx;
+}
+

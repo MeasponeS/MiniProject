@@ -1,0 +1,29 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="topic-answer">
+    <view class="topic-answer-top">
+        <view class="answer-box">
+            <view class="answer">查看答案</view>
+            <view class="topic-answer-btn-group">
+                <view wx:if="{{ 3 == topic.newType }}" bindtap="clickIndex" id="{{ index }}" class="btn {{ index == activeIndex ? 'active' : '' }}" wx:for="{{ topic.a3a4Questions }}" wx:key="{{item.questionId}}">{{ item.index }}</view>
+                <view wx:if="{{ 5 == topic.newType }}" bindtap="clickIndex" id="{{ index }}" class="btn {{ index == activeIndex ? 'active' : '' }}" wx:for="{{ topic.questionArr }}" wx:key="{{item.questionId}}">{{ item.index }}</view>
+            </view>
+        </view>
+        <view class="close" bindtap="clickClose">×</view>
+    </view>
+    <view class="correct-answer">
+        正确答案：
+        <view wx:if="{{ 1 == topic.newType }}">{{ topic.answer }}</view>
+        <view wx:if="{{ 3 == topic.newType }}">{{ topic.a3a4Questions[activeIndex].answer }}</view>
+        <view wx:if="{{ 5 == topic.newType }}">{{ topic.questionArr[activeIndex].answer }}</view>
+    </view>
+    <view class="topic-answer-content">
+        <view class="topic-answer-content-top">
+            相关知识点
+        </view>
+        <view class="answer-rich-text">
+            <rich-text wx:if="{{ 1 == topic.newType }}" nodes="{{ topic.analyisis }}"> </rich-text>
+            <rich-text wx:if="{{ 3 == topic.newType }}" nodes="{{ topic.a3a4Questions[activeIndex].analyisis }}"> </rich-text>
+            <rich-text wx:if="{{ 5 == topic.newType }}" nodes="{{ topic.questionArr[activeIndex].analyisis }}"> </rich-text>
+        </view>
+    </view>
+</view>

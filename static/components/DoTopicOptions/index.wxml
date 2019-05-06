@@ -1,0 +1,18 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="do-topic-options">
+    <view class="options-ul" wx:if="{{ options.length>0 }}">
+        <!-- li 标签类说明 user-answer用户选择  is-answer标准答案 -->
+        <view  class="options-li {{ utils.indexOf(value,item.optionName) ? 'user-answer' : ''}} {{ utils.indexOf(correctAnswer,item.optionName) ? 'is-answer':''}}"
+            wx:for="{{ options }}"
+            id="{{ item.optionName }}"
+            wx:key="{{ item.optionName }}"
+            bindtap="clickOption"
+        >
+            <view class="options-val">{{ item.optionName }}</view>
+            <rich-text class="options-text" nodes="{{ item.optionContent }}"> </rich-text>
+            <view class="correct-answer-perch"></view>
+        </view>
+    </view>
+    <view wx:else style="padding: 30px;text-align: center">暂无选项</view>
+</view>
+

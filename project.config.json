@@ -1,0 +1,238 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false,
+		"checkInvalidKey": true
+	},
+	"miniprogramRoot": "dist/wx/",
+	"compileType": "miniprogram",
+	"appid": "wx70c3a23b39fa53aa",
+	"projectname": "%E5%B0%8F%E7%A8%8B%E5%BA%8F",
+	"libVersion": "2.4.4",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 21,
+			"list": [
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/mine/editPassword/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息详情",
+					"pathName": "pages/mine/messageDetails/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "习题",
+					"pathName": "pages/topic/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/mine/collection/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考试详情",
+					"pathName": "pages/exam/examDetails/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "wode ",
+					"pathName": "pages/mine/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/mine/editPassword/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "习题结果页面",
+					"pathName": "pages/topic/topicResults/main",
+					"query": "packageId=93&courseId=401&levelId=15887",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考试",
+					"pathName": "pages/exam/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 9,
+					"name": "正在考试",
+					"pathName": "pages/exam/examDetails/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "首页带参数",
+					"pathName": "pages/index/main",
+					"query": "code=b329730b4e944b438c7f6fcaf543468a ",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "习题",
+					"pathName": "pages/topic/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "开卡",
+					"pathName": "pages/other/openLearningCard/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 13,
+					"name": "习题集关卡",
+					"pathName": "pages/topic/topicLevel/main",
+					"query": "packageId=93&courseId=401",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "习题详情",
+					"pathName": "pages/topic/topicDetails/main",
+					"query": "packageId=93&courseId=401&levelId=15887",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "消息",
+					"pathName": "pages/mine/message/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "收藏",
+					"pathName": "pages/mine/collection/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "学习",
+					"pathName": "pages/study/index/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考试详情",
+					"pathName": "pages/exam/examResult/main",
+					"query": "testingId=185&paperId=4333&name=煎饼果子来一套",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "考试结果详情页",
+					"pathName": "pages/exam/examHistory/main",
+					"query": "testingId=185&paperId=4333&name=煎饼果子来一套&index=5",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人资料",
+					"pathName": "pages/mine/info/main",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 21,
+					"name": "视频详情",
+					"pathName": "pages/study/studyDetails/main",
+					"query": "coursePackId=127&courseId=542&chapterId=2959&chapterPid=2614",
+					"scene": null
+				},
+				{
+					"id": 22,
+					"name": "错题集列表",
+					"pathName": "pages/topic/errorList/main",
+					"query": "packageId=127&courseId=481",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "错题集列表",
+					"pathName": "pages/topic/errorList/main",
+					"query": "packageId=127&courseId=481",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "错题详情",
+					"pathName": "pages/topic/topicError/main",
+					"query": "wrongId=657&learnStatus=2",
+					"scene": null
+				},
+				{
+					"id": 25,
+					"name": "仁爱学堂",
+					"pathName": "pages/index/main",
+					"query": "code=56deb61e23e24b208584a4230cd942a2",
+					"scene": null
+				},
+				{
+					"id": 26,
+					"name": "北京嵘领国际医学研究院",
+					"pathName": "pages/index/main",
+					"query": "code=85ab78ecd1ac41448654eab9bcab821a",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "北京嵘领国际医学研究院",
+					"pathName": "pages/study/studyDetails/main",
+					"query": "coursePackId=127&courseId=542&chapterId=3058&chapterPid=2613",
+					"scene": null
+				}
+			]
+		}
+	}
+}

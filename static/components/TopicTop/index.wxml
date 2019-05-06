@@ -1,0 +1,14 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="topic-top">
+    <view class="topic-title">
+        <view>第{{ index }}题/共{{ total }}题</view>
+        <view class="topic-type">
+            {{ utils.topicType(newType) }}
+        </view>
+    </view>
+    <view class="btn-group">
+        <view class="topic-btn {{ utils.indexOf(doIndex,item) ? 'do' : '' }}" wx:for="{{ topicList }}" wx:key="{{ item }}">
+            {{ item }}
+        </view>
+    </view>
+</view>

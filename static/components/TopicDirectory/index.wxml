@@ -1,0 +1,13 @@
+<wxs src="../utils.wxs" module="utils" />
+<view class="topic-directory">
+    <view class="topic-directory-top">
+        <view class="jump">跳转到</view>
+        <view class="close" bindtap="clickClose">×</view>
+    </view>
+    <view class="topic-directory-content">
+       <view class="block  {{ activeIndex == index ? 'active':'' }}" wx:for="{{ topics }}" id="{{index}}" bindtap="clickItem" wx:key="{{ item.questionId }}">
+           <rect-progress progress="{{ utils.topicProgress(item) }}"></rect-progress>
+           第{{ utils.currentTopicIndex(item ,index+1) }}题
+       </view>
+    </view>
+</view>

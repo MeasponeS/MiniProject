@@ -1,0 +1,12 @@
+
+<view class="protocol-zj">
+    <view class="contentRadio" bindtap="switchProtocol">
+        <view class="radio" >
+                <view wx:if="{{ value }}" class="active"></view>
+            </view>
+    </view>
+    <view class="agreement">
+        我已阅读并接受《<text bindtap="toAgreement" class="agreement-a">用户协议</text>》
+    </view>
+</view>
+

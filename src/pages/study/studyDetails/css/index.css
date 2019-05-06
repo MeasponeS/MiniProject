@@ -1,0 +1,21 @@
+.chapterContent{
+    padding: 42rpx 46rpx;
+    font-size:30rpx;
+    background: #fff;
+    line-height: 54rpx;
+    padding-bottom:120rpx;
+}
+.chapterContent h3{
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #222;
+    margin: 44rpx 0;
+}
+.rich  img,.rich image{
+    width: 100%;
+}
+.chapterContent span{
+    font-size: 30rpx;
+    color: #333;
+    text-indent: 60rpx;
+}

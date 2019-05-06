@@ -1,0 +1,8 @@
+<view class="empty-display">
+    <image wx:if="{{ type == 'exam' }}" class="empty-img" src="./img/exam.png" mode="widthFix"></image>
+    <image wx:if="{{ type == 'msg' }}" class="empty-img" src="./img/msg.png" mode="widthFix"></image>
+    <image wx:if="{{ type == 'topic' }}" class="empty-img" src="./img/topic.png" mode="widthFix"></image>
+    <image wx:if="{{ type == 'course' }}" class="empty-img" src="./img/course.png" mode="widthFix"></image>
+    <text class="text">{{ text }}</text>
+</view>
+

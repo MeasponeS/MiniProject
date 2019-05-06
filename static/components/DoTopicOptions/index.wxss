@@ -1,0 +1,47 @@
+.options-ul{
+    border-radius:5rpx;
+}
+.options-li{
+    display: flex;
+    width: 100%;
+    padding: 36rpx 28rpx;
+    align-items: center;
+    background:#FCFCFC;
+
+}
+.options-ul .options-li:nth-child(even){
+    background:#fff;
+}
+.options-val{
+    width: 42rpx;
+    height: 42rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25rpx;
+    border-radius: 50%;
+    border: 1rpx solid #969FA9;
+    color: #fff;
+    line-height: 0;
+    background: #969FA9;
+    font-size: 26rpx;
+}
+.options-text {
+    flex: 1;
+    color: #333;
+    font-size: 30rpx;
+}
+.correct-answer-perch {
+    width: 32rpx;
+    margin-left: 10rpx;
+    height: 32rpx;
+}
+.is-answer .correct-answer-perch {
+    background: url("http://static.hulian120.com/learncenter/minipro/yes.png");
+    background-size: 100% 100%;
+}
+.user-answer .options-val {
+    background-color: #F8A92C;
+    color: #fff;
+    border-color: #F8A92C;
+}

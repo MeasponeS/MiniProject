@@ -1,0 +1,18 @@
+.topic-card {
+    padding: 24rpx;
+    width: 100%;
+    border-radius: 5rpx;
+    overflow: hidden;
+    background:#373D52;
+    color: #fff;
+    line-height: 50rpx;
+    font-size: 30rpx;
+}
+.topic-card .items-ul{
+    padding: 18rpx;
+}
+.topic-card .items-ul .items-li{
+     font-size: 26rpx;
+     min-width: 50%;
+     display: inline-block
+ }

@@ -1,0 +1,4 @@
+<view class="rect-progress" style="background: {{  info.start.bg }};">
+    <view class="bg-progress" style="width:{{ progress }}%;background: {{  info.end.bg }};"></view>
+    <view class="text-progress">{{ progress != 0 ? info.end.text : info.start.text }}</view>
+</view>

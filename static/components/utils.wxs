@@ -1,0 +1,84 @@
+
+var idxOf = function(array, item) {
+    return array.indexOf(item) != -1;
+}
+var toLowerCase = function(letter) {
+   return letter.toLowerCase();
+}
+
+var topicType = function(newType) {
+   if(1 == newType) return "A1A2题";
+   if(3 == newType) return "A3A4题";
+   if(5 == newType) return "B型题";
+   return "";
+}
+var topicProgress = function(topic) {
+
+    var progress = 0;
+    if(1 == topic.newType){
+        if(topic.historyAnswer.length != 0){
+            progress = 100;
+        }
+       return progress;
+    }
+    if(3 == topic.newType){
+
+        var val = 100 / (topic.a3a4Questions.length);
+
+       topic.a3a4Questions.forEach(function(r){
+
+            if(r.historyAnswer.length != 0){
+                progress += val;
+            }
+       });
+
+       return progress;
+    }
+    if(5 == topic.newType){
+        var val = 100 / (topic.questionArr).length;
+       topic.questionArr.forEach(function(r){
+            if(r.historyAnswer.length != 0){
+                progress += val;
+            }
+       });
+       return progress;
+    }
+    return progress;
+}
+
+var formatExamTime = function(examTime){
+    if(examTime <= 0){return "00:00:00";}
+
+    var countDown = [0,0,0]
+    countDown[0] = Math.floor(examTime / 60 / 60);
+    countDown[1] = Math.floor(examTime / 60 % 60);
+    countDown[2] = Math.round(examTime % 60);
+    return countDown.map(function(s){
+        var str = s.toString();
+        return str[1] ? str : "0" + str
+    }).join(':');
+}
+
+var toLowerCase = function(letter) {
+   return letter.toLowerCase();
+}
+
+var currentTopicIndex = function(item,index) {
+
+    if(item.index){
+        return item.index;
+    }
+    if(item.indexs) {
+        return item.indexs[0] + '~' + item.indexs[item.indexs.length - 1];
+    }
+    return index;
+}
+
+module.exports = {
+  indexOf: idxOf,
+  toLowerCase: toLowerCase,
+  topicType:topicType,
+  topicProgress:topicProgress,
+  formatExamTime:formatExamTime,
+  currentTopicIndex:currentTopicIndex
+};

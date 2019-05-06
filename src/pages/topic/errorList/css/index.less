@@ -1,0 +1,89 @@
+.error-list{
+    .tab{
+        background: #F3F5F7;
+        width: 100%;
+        height: 100rpx;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .to-error{
+            color: #6886FB;
+            font-size: 30rpx;
+            margin-right: 20rpx;
+            img{
+                width: 16rpx;
+                height: 25rpx;
+            }
+        }
+        ul{
+            height: 100rpx;
+            padding: 0 20rpx;
+            display: flex;
+            align-items: center;
+            li{
+                height: 100%;
+                font-size: 30rpx;
+                color: #333;
+                position: relative;
+                margin: 0 25rpx;
+                display: flex;
+                align-items: center;
+            }
+            .active{
+                color: #000;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 18rpx;
+                    left: calc(50% - 15rpx);
+                    width:30rpx;
+                    height:4rpx;
+                    background: #6886FB;
+                    border-radius: 2rpx;
+                }
+            }
+        }
+
+    }
+    .content{
+        height: calc(100vh - 100rpx);
+        overflow-y: auto;
+        .list{
+            display: flex;
+            padding: 20rpx;
+            justify-content: space-between;
+            flex-wrap:wrap;
+            li{
+                width: 344rpx;
+                height: 88rpx;
+                display:flex;
+                overflow: hidden;
+                padding: 0 20rpx;
+                align-items: center;
+                margin-bottom: 20rpx;
+                background: #fff;
+                .status{
+                    width: 72rpx;
+                    height: 28rpx;
+                    text-align: center;
+                    line-height: 28rpx;
+                    color: #fff;
+                    margin-right: 20rpx;
+                    font-size: 20rpx;
+                    background: #969FA9;
+                    &.learn{
+                        background: #31B68F;
+                    }
+                }
+                h3{
+                    font-size:30rpx;
+                    flex: 1;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
+            }
+        }
+    }
+
+}
